@@ -97,6 +97,8 @@ ul{list-style:none;margin:0;padding:0}
 .card-detail p+p{margin-top:8px}
 .card-detail .detail-head{font-weight:800;color:var(--navy)}
 .card-detail .detail-lead{font-weight:700;color:var(--ink)}
+.card .card-detail-img picture{display:block}
+.card .card-detail-img img{margin:0;aspect-ratio:auto;height:auto;object-fit:contain;background:none}
 .card-foot{margin-top:auto;padding-top:14px;min-height:100px;align-content:start;display:grid;grid-template-columns:40px minmax(0,1fr) 40px;align-items:center;column-gap:4px}
 .price{grid-column:2;text-align:center;color:var(--pink);font-weight:800;font-size:22px;line-height:1.2;white-space:nowrap}
 .price strong{font-size:32px;font-weight:800;letter-spacing:-.02em}
