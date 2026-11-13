@@ -271,3 +271,19 @@ ul{list-style:none;margin:0;padding:0}
   .about p{font-size:16px}
 }
 @media (min-width:600px){.hero-why .nw{white-space:nowrap}}
+
+/* 11/13 고객 요청 — 첫 화면을 고객 그림 + 하단에서 옮긴 문장 + 상담 버튼으로 */
+.hero-new{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:18px}
+.hero-img{display:block;width:min(100%,640px);background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.hero-img img{display:block;width:100%;height:auto}
+.hero-cta-text{margin-top:26px;font-size:26px;line-height:1.45;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.hero-cta-text + .btn{margin-top:26px}
+.cta-band--btn{justify-content:center;min-height:0;padding:8px 0;background:none;border:0;box-shadow:none;overflow:visible}
+@media (max-width:860px){
+  .hero-new{padding-top:6px}
+  .hero-img{width:auto;max-width:none;margin:0 -12px;border-radius:18px}
+  .hero-cta-text{margin-top:20px;font-size:20px}
+  .hero-cta-text + .btn{margin-top:20px}
+  .cta-band--btn{padding:0}
+}
+@media (max-width:400px){.hero-img{margin:0 -10px}}
